@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lily+Script+One&display=swap" rel="stylesheet">
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contenido">
+            <div class="card">
+                <div class="header-card">
+                    <img src="../assets/image/foto.jpg" alt="">
+                    <div class="infor-artista">
+                        <span>The Cut That Always Bleeds</span>
+                        <p>Conan Gray</p>
+                    </div>
+                </div>
+                <div class="body-card" id="bodyCard">
+                    <p class="letra-cancion" id="letra">
+                        I don't love you anymore
+                        A pretty line that I adore
+                        Five words that I've heard before
+                        'Cause you keep me on a rope
+                        And tied a noose around my throat
+                        You're gone, then back at my door
+                        'Cause if you're gonna leave
+                        Better leave, better do it fast
+                        Can't live a little longer
+                        Sitting on your lap
+                        'Cause you know what you're doing
+                        When you're coming back
+                        And I don't want to have
+                        Another heart attack
+                        Oh, I can't be
+                        Your lover on a leash
+                        Every other week
+                        When you please
+                        Oh, I can't be
+                        The kiss that you don't need
+                        The lie between your teeth
+                        The cut that always bleeds
+                        The cut that always bleeds
+                        Say you love somebody new
+                        And beat my heart, to black and blue
+                        Then they leave, and it's me
+                        You come back to
+                        To say you loved me all along
+                        And kissed the bruises 'til they're gone
+                        Bittersweet, 'cause I can't breathe
+                        Inside your arms
+                        'Cause if you're gonna leave
+                        Better leave, better do it fast
+                        Can't live another minute
+                        Bleeding from my back
+                        'Cause I don't have another one
+                        For you to stab
+                        And I don't want to have
+                        Another heart attack
+                        Oh I can't be
+                        Your lover on a leash
+                        Every other week
+                        When you please
+                        Oh, I can't be
+                        The kiss that you don't need
+                        The lie between your teeth
+                        The cut that always bleeds
+                        The cut that always bleeds
+                        But even though you're killing me
+                        I, I need you like the air I breathe
+                        I need, I need you more than me
+                        I need you more than anything
+                        Please, please
+                        'Cause I could be
+                        Your lover on a leash
+                        Every other week
+                        When you please
+                        Oh, I could be
+                        Anything you need
+                        As long as you don't leave
+                        The cut that always
+                    </p>
+                </div>
+                <div class="footer-card">
+                    <img src="../assets/icon/spoty.svg" alt="">
+                    <span>Spotify</span>
+                </div>  
+            </div>
+            <audio src="../assets/audio/videoplayback.m4a" id="audioCancion" preload="auto"></audio>
+            <div class="duracion-audio">
+                <input class="tiempo-duracion" type="range" min="0" max="0" value="0" id="duracion">
+            </div>
+            <div class="controles-audio">
+                <button class="btn-pausar" id="botonPausar">
+                    <img src="../assets/icon/pausarIcon.png" alt="">
+                </button>
+                <button class="btn-play" id="botonPlay">
+                    <img src="../assets/icon/playIcon.png" alt="">
+                </button>
+                <input type="range" min="0" max="100" value="0.0" id="volumen" class="control-volumen">
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

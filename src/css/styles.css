@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter";
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #bebebe;
+}
+.card{
+    width: 36%;
+    height: fit-content;
+    background-color: #cac7c7 ;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.card::-webkit-scrollbar{
+    visibility: hidden;
+}
+.header-card{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.infor-artista{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+.infor-artista p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.body-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    height: 30vh; /* Limita la altura para permitir el scroll */
+    overflow-y: auto; /* Habilita el scroll vertical */
+    padding: 0.2rem; /* Espaciado opcional alrededor del texto */
+}
+.body-card::-webkit-scrollbar{
+    appearance: none;
+}
+.footer-card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.header-card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.footer-card img{
+    width: 50px;
+    height: 50px;
+}
+.duracion-audio{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+}
+.duracion-audio input{
+    appearance: none;
+    background: #ddd;
+    width: 100%;
+    border-radius: 1rem;
+}
+.duracion-audio input::-webkit-slider-runnable-track{
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 1rem;
+
+}
+.tiempo-duracion::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Eliminar estilo predeterminado */
+    width: 14px;
+    height: 14px; /* Alto de la pelotita */
+    background: #ffffff; /* Color de la pelotita */
+    border-radius: 1rem; /* Forma circular */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    box-shadow: 0 4 12px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+.controles-audio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 1.4rem;
+    border-radius: 2rem;
+}
+.controles-audio img{
+    width: 24px;
+    color: #fff;
+}
+.controles-audio button{
+    padding: .6rem;
+    border: none;
+    background: #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.control-volumen{
+    appearance: none; /* Elimina el estilo predeterminado en Chrome */
+    width: 20%; /* Ancho del slider */
+    height: 8px; /* Altura de la barra */
+    background: #ddd; /* Color de la barra */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px 0; /* Margen vertical */
+    transform: rotate(270deg);
+}
+.control-volumen::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Eliminar estilo predeterminado */
+    width: 14px;
+    height: 14px; /* Alto de la pelotita */
+    background: #f53939; /* Color de la pelotita */
+    border-radius: 1rem; /* Forma circular */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    box-shadow: 0 4 12px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+
+@media (max-width: 900px) {
+    .card{
+        width: 70%;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .controles-audio{
+        padding: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .card{
+        width: 70%;
+        padding: 1rem;
+        gap: 1.4rem;
+    }
+    .controles-audio{
+        padding: 0.6rem;
+    }
+
+}
+@media (max-width: 550px) {
+    .card{
+        width: 70%;
+        height: fit-content;
+        padding: 1rem;
+        gap: 1.4rem;
+    }
+    .header-card{
+        font-size: 1.2rem;
+    }
+    .body-card{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 400px) {
+    .contenido{
+        justify-content: end;
+    }
+    .card{
+        width: 80%;
+        height: fit-content;
+        padding: 1rem;
+        gap: 1.2rem;
+    }
+    .header-card{
+        font-size: 1rem;
+    }
+    .body-card{
+        font-size: 1.4rem;
+    }
+    .footer-card{
+        font-size: 1.4rem;
+    }
+    .footer-card img{
+        width: 40px;;
+        height: 40px;
+    }
+    .duracion-audio{
+        width: 40vw;
+    }
+}
